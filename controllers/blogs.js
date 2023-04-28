@@ -3,13 +3,6 @@ const Blog = require('../models/blog')
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
 const userExtractor = require('../utils/middleware').userExtractor
-// const getTokenFrom = request => {
-// 	const authorization = request.get('authorization')
-// 	if (authorization && authorization.startsWith('Bearer ')){
-// 		return authorization.replace('Bearer ', '')
-// 	}
-// 	return null
-// }
 
 blogsRouter.get('/', async (request, response) => {
 	try{
